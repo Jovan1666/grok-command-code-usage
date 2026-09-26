@@ -1,0 +1,14 @@
+# 依赖（本仓库不需要任何 npm 包，安装时也不跑脚本；这条是给临时试验用的）
+**/.devdeps/
+node_modules/
+
+# 运行时产物
+*.log
+.DS_Store
+Thumbs.db
+
+# 本地校验用的临时目录
+/tmp/
+
+# Grok 在 Windows 上的批处理包装（setup.mjs 生成，内容随 --rows 变）
+scripts/cc-usage.cmd

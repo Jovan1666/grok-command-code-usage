@@ -1,0 +1,22 @@
+{
+  "name": "Command Code Usage",
+  "description": "Show your Command Code plan usage in the Grok Build status line, and check it from the conversation.",
+  "owner": {
+    "name": "Jovan1666",
+    "url": "https://github.com/Jovan1666"
+  },
+  "plugins": [
+    {
+      "name": "commandcode-usage",
+      "description": "Command Code plan usage in the status line: 5-hour, weekly and monthly windows with reset times. Runs locally, costs no tokens.",
+      "category": "utilities",
+      "version": "1.0.1",
+      "homepage": "https://github.com/Jovan1666/grok-command-code-usage",
+      "keywords": ["quota", "usage", "status-line", "command-code"],
+      "source": {
+        "type": "local",
+        "path": "."
+      }
+    }
+  ]
+}

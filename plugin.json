@@ -1,0 +1,13 @@
+{
+  "name": "commandcode-usage",
+  "version": "1.0.1",
+  "description": "Show your Command Code plan usage in the Grok Build status line: 5-hour, weekly and monthly windows with reset times. Runs locally — costs no tokens.",
+  "author": {
+    "name": "Jovan1666",
+    "url": "https://github.com/Jovan1666"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Jovan1666/grok-command-code-usage",
+  "repository": "https://github.com/Jovan1666/grok-command-code-usage",
+  "commands": "./commands"
+}
