@@ -260,7 +260,11 @@ record('grok', () => {
    * cc-usage.cmd 落在临时目录里，不会污染工作区（它在 .gitignore 里，但检查不该弄脏仓库）。
    */
   const makeCase = () => {
-    const dir = fs.mkdtempSync(path.join(root, 'case-'));
+    // 解析符号链接再往下用。setup.mjs 是从 import.meta.url 取自己所在目录的，而 Node
+    // 会把主模块的路径解析成 realpath——macOS 上 /var 是 /private/var 的软链，于是它写进
+    // config.toml 的是 /private/var/...，而这里若拿未解析的 /var/... 去比，永远对不上。
+    // 三个平台里只有 macOS 的临时目录是软链，所以只有它的 CI 会红。
+    const dir = fs.realpathSync(fs.mkdtempSync(path.join(root, 'case-')));
     const scripts = path.join(dir, 'scripts');
     const home = path.join(dir, 'grok');
     fs.mkdirSync(scripts, { recursive: true });
