@@ -1,0 +1,13 @@
+{
+  "source": "https://github.com/Jovan1666/commandcode-usage",
+  "sourceCommit": "80b65f13bbb98c373a41754e59d336c81a9f0b99",
+  "note": "本文件由 monorepo 的 scripts/release.mjs 生成：列出本仓库里属于「分发产物」的文件及其 sha256。要改实现请改 monorepo；本仓库的副本被就地改动时 scripts/verify-core.mjs 会报错。",
+  "files": {
+    ".github/workflows/verify-core.yml": "4e5afe9e98d279d02aa1dd58c0a6825e47c67a563a27dac44039e282a66c4442",
+    "commands/quota.md": "d750597c5faae9e567787153b427d5a17290a995dca60d05d6c7960f13c75966",
+    "plugin.json": "8be123c0a341b4d2119134ed1d3f7433bcccafbea4077c4725c5cc206cc6790f",
+    "scripts/cc-usage.mjs": "6294622d510a28ca0795e4495000761f464ba7e0803fa8b959e48d893c5ebbcf",
+    "scripts/setup.mjs": "bfcc5a0b34fa97062533fae1c8d2d9050a6ee72c3ff4a7fd6d8e93416e618363",
+    "scripts/verify-core.mjs": "c4aa76153732930baec323469ce046570b0a9f60b0131bc8d5e86a19d94528c9"
+  }
+}
